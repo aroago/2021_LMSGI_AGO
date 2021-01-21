@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<email>
+	<remitente>miCasa</remitente>
+	<destinatario>MiMansion</destinatario>
+	<fecha>19/01/2020</fecha>
+	<asunto>Me mudo de casa</asunto>
+	<mensaje>Hola me he hecho millonaria y me cambio de casa</mensaje>
+	<ficherosAdj>
+		<nombre>Aroa</nombre>
+		<tipo>MIME</tipo>
+	</ficherosAdj>
+</email>
+
