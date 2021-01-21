@@ -1,0 +1,148 @@
+﻿
+/* 
+    Created on : 26-Nov-2020
+    Author     : Aroa Granero Omañas
+   #E9967A - carne
+   #9932CC - morado
+   #04B404 - Verde radiactivo
+   #FFB973- Amarillo claro
+   #008000- verde planta
+   #8B008B- otro Morado
+*/
+body, div,h1,p{
+	margin:0;
+	padding:0;
+}
+* {box-sizing: border-box; font-family: calibri, arial, sans-serif;} 
+body{
+	background-image: url(../images/Le_petit_prince.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	margin-right:250px;
+	background-size:10%;
+	
+}
+h1{
+	background-color:#FF4500;
+	color:red;
+	font-variant:small-caps;
+	
+	
+}
+div p{
+	padding: 9px;
+	margin:6px 0px;
+}
+.par1{
+	background-color:lightblue;
+	color:green;
+	padding-top: 3px;
+	padding-bottom:3px;
+	margin: 3px 0px;
+}
+.static{
+	border:solid;
+	border-color:#E9967A;
+	border-width:1px;
+	position:static;
+	
+	
+}
+.relative{
+	border:dotted;
+	border-color: #9932CC;
+	border-width:1px;
+	position:relative;
+	left: 60px;
+}
+.fixed{
+	position:fixed;
+	border:dashed;
+	border-color:#04B404;
+	border-width:3px;
+	background-color:#FFB973;
+	max-width:250px;
+	right:0px;
+	bottom:0px;
+	margin-bottom:99px;
+}
+.relative1{
+	position:relative;
+	border:groove 3px #008000;
+	width:500px;
+	height:150px;
+}
+.absolute1{
+	position:relative;
+	left:240px;
+	bottom:-20px;
+	border:ridge 3px #ADFF2F;
+	width:250px;
+	height:75px;
+}
+.sticky{
+	position:sticky;
+	background-color:#008000;
+	border-radius:25px;
+	text-align:center;
+	border: solid 3px;
+	border-color: #ADFF2F;
+	color:#ADFF2F;
+	top:0;
+}
+.img1{
+	position:absolute;
+	top:6px;
+	z-index:-1;
+	opacity:0.5;
+	width:30%;
+	
+}
+.img2{
+	z-index:-1;
+	opacity:0.5;
+	width:50%;
+	height:auto;
+}
+.relative1 p{
+	position:relative;
+	z-index:2;
+	width:95%;
+	margin-top:10px ;
+
+}
+.container{
+	border:solid 3px #8B008B;
+	position:relative;
+}
+.container div{
+	position:absolute;
+	font-size:18px;
+	font-variant:small-caps;
+	border:solid 3px  #8B008B;
+	color: #8B008B;
+	background-color: #FF9C00;
+
+	
+}
+.topleft{
+	top:9px;
+	right:9px
+	
+}
+.topright{
+	top:9px;
+	left:9px;
+}
+.center{
+	top:50%;
+	right:50%;
+}
+.bottomright{
+	bottom:9px;
+	right:9px;
+}
+.bottomleft{
+	bottom:9px;
+	left:9px;
+}

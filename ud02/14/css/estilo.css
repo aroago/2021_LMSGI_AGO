@@ -1,0 +1,113 @@
+﻿
+/* 
+    Created on : 05-dic-2020
+    Author     : aroaGO
+   
+*/
+@font-face{
+	font-family: fontawasome;
+	src:url(../fonts/fontawesome/webfonts/fa-solid-900.woff);
+}
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}
+
+ul, ol{
+	list-style:none;
+}
+a{
+text-decoration:none;
+color:white;
+}
+
+
+body{
+	font-family:Comic Sans MS;
+}
+.topmenu {
+  background-color:grey;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+nav a{
+	color:black;
+}
+nav li{
+	display:inline-block;
+}
+nav a{
+	padding:20px;
+}
+nav a:hover{
+	text-decoration:underline;
+	text-decoration-color:red;
+}
+
+.topmenu .active:before{
+	content:"\f015";
+	font-family: fontawasome;
+	padding-right:5%;
+}
+.topmenu .news:before{
+	content:"\f1ea";
+	font-family: fontawasome;
+	padding-right:5%
+}
+.topmenu .contact:before{
+	content:"\f007";
+	font-family: fontawasome;
+	padding-right:5%
+}
+.topmenu .about:before{
+	content:"\f128";
+	font-family: fontawasome;
+	padding-right:5%
+}
+.column {
+  float: left;
+  padding: 8px;
+ 
+}
+
+.column.sidemenu{
+  width: 25%;
+ 
+}
+.column.sidemenu li{
+	padding:10px;
+	background-color:grey;
+	margin:5px;
+	
+}
+
+.column.content{
+  width: 75%;
+}
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color:grey;
+}
+.header{
+	padding:10px;
+	margin:5px;
+	border:2px black solid;
+	border-color:darkred;
+	text-align:center;
+	color:#9F134A;
+	font-variant:small-caps;
+}
+article h2{
+	color:#9F134A;
+	padding:5px 5px 5px 10px;
+	font-variant:small-caps;
+	letter-spacing:0.1em;
+}

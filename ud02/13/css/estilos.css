@@ -1,0 +1,88 @@
+@font-face{
+	font-family: fontawasome;
+	src:url(./fontawesome/webfonts/fa-solid-900.woff);
+}
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}
+
+ul, ol{
+	list-style:none;
+}
+a{
+text-decoration:none;
+color:black}
+
+header{
+  text-align:center;
+ 
+}
+header h1 {
+	font-size: 30px;
+	padding:25px;
+}
+header h2 {
+	font-size: 25px;
+	padding:20px;
+}
+header h3 {
+	font-size: 20px;
+	padding:15px;
+}
+header h4 {
+	font-size: 15px;
+	padding:10px;
+}
+
+nav li{
+	display:inline-block;
+	
+}
+nav a{
+	padding:20px;
+	}
+nav a:hover{
+	background:grey;
+	color:white;
+}
+section{
+	width:33.33%;
+	float:left;
+}
+main:after{
+	content:"";
+	display:table;
+	clear: both;
+}
+article header{color: white;}
+article figcaption{font-size:8px;text-align:center;}
+article footer{
+	text-align:center;
+	padding:10px;
+	margin-left:50%;
+}
+article{
+	background-color:grey;
+	margin: 0px 10px 2px 0px;
+	border-radius:5%;
+}
+article figure{
+	position:absolute;
+	left:2px;
+	top:0px;
+	
+}
+article img {
+	width:120px;
+ height:120px;}
+article .content{
+	position:relative;
+	padding-left:125px;
+}
+h2:before{
+	content:"\f14e";
+	font-family: fontawasome;
+	padding-right:5%
+}

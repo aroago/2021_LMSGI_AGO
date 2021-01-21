@@ -1,0 +1,209 @@
+﻿@font-face{
+	font-family: fontawasome;
+	src:url(./fontawesome/webfonts/fa-solid-900.woff);
+}
+html, body{
+	 height: 100%;
+	 width:100%;
+	 background-color:grey;
+}
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	}
+
+ul, ol{
+	list-style:none;
+}
+img{
+	width:150px;
+	display:block;
+	margin:auto;
+	margin-top:40px;
+	
+}
+figcaption{
+	margin-bottom:50px;
+	display:block;
+	text-align:center;
+	padding-top:10px;
+	text-transform:uppercase;
+	color:white;
+	font-size:13px;
+}
+#caja0{
+	border:dashed 1px grey;
+	overflow:hidden;
+	
+}
+#caja1{
+float:left;  
+background-color:grey;
+width: 35%;
+height:100%;
+
+}
+
+[class*="icon"]{
+	padding-left:0%;
+	letter-spacing:0.2em;
+	font-weight: bold;
+	font-size:12px;
+	text-transform:uppercase;
+	margin-bottom:3px;
+	margin-top:10px;
+	
+}
+:before{
+	margin:10px;
+    border-radius: 50px;
+    color: white;
+	border:solid 1px white;
+    background-color: black;
+	padding:4px;
+	font-size:20px;
+	font-family: fontawasome;
+}
+.respuesta{
+	padding-left:11%;
+	margin-top:3px;
+	font-size:11px;
+	padding-bottom:20px;
+}
+
+.iconoDireccion:before{
+	content:"\f041";
+	padding:4px 5px 4px 5px;
+	
+}
+.iconoTel:before{
+	content:"\f10b";
+	padding:4px 6px 4px 6px;
+}
+.iconoEmail:before{
+	content:"\f1fa";
+	padding:4px 3px 4px 3px;	
+}
+.iconoFechNac:before{
+	content:"\f1fd";
+}
+.iconoNacio:before{
+	content:"\f14e";
+	
+}
+.iconoEstCiv:before{
+	content:"\f007";
+}
+.iconoDNI:before{
+	content:"\f234";
+	padding:4px 1px 4px 1px;	
+}
+.iconoHora:before{
+	content:"\f279";
+	padding:4px 2px 4px 2px;
+
+}
+
+#caja2{
+float:left;                                                                       
+background-color:#FEF584;
+height:100%;
+text-align:left;
+width:65%;
+}
+#caja1h{
+	height:50%;
+	clear: both;
+	
+}
+#caja2h{
+	float:left;
+	left:50px;
+	top:0px;
+	width:28%;
+	padding-top:23px;
+	padding-left:30px;
+}
+#caja3h{
+	float:left;
+	width:50%;
+}
+.trabajo{
+	font-weight: bolder;
+	text-transform:uppercase;
+	font-size:16px;
+	margin:5px 30px 0px 30px;
+}
+.empresa{
+	font-weight: bold;
+	text-transform:uppercase;
+	color:blue;
+	font-style:italic;
+	font-size:11px;
+	margin:0px 10px 0px 30px;
+	
+}
+.anyo{
+	font-size:10px;
+	margin:0px 10px 20px 30px;
+}
+li{
+	list-style:none;
+	font-size:12px;
+	margin:30px 0px 30px 0px;
+	
+}
+ .tick:before{
+	border:solid 0px ;
+    background-color: transparent;
+	content:"\f00c";
+	margin-right:8px;
+	color:black;
+	font-size:10px;
+}
+hr{
+	width:80%;
+	border:dashed 1px ;
+	padding:0px 10px 0px 10px; 
+	margin-left:96px;
+	margin-bottom:20px;
+}
+hr:before{
+	position:absolute;
+	font-size: 20px;
+	height: 26px;
+	width: 26px; 
+	text-align:center;
+	line-height: 30px;
+	background-color: #000;
+	color:#fff;
+	border-radius:50px;
+	border:1px solid #fff;
+	margin-left:-58px;
+	margin-top:-17px;
+}
+.iconoH:before{
+	content:"\f1dc";
+	padding:3px 3px 3px 3px;
+}
+.iconoGorro:before{
+	content:"\f19d";
+	padding:4px 4px 4px 4px;
+}
+ .iconoCarita:before{
+	content:"\f118";
+}
+.iconoCamion:before{
+	content:"\f0d1";
+	padding:4px 4px 4px 4px;
+}
+.iconoBandera:before{
+	content:"\f11e";
+}
+.otra{
+	padding-left:5%;
+}
+ul{
+	margin-bottom:8px;
+}
