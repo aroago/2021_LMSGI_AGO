@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0">
+	<channel>
+		<title>LMSGI-RSS-AroaGraneroOmanas</title>
+		<link>http://192.168.2.119/</link>
+		<description>
+				5 ULTIMAS PRACTICAS REALIZADAS EN CSS
+		</description>
+		<skypdays>
+			<day>Saturday</day>
+			<day>Sunday</day>
+		</skypdays>
+		<skyphours>
+			<hour>0</hour>
+			<hour>1</hour>
+			<hour>2</hour>
+			<hour>3</hour>
+			<hour>4</hour>
+			<hour>5</hour>
+			<hour>6</hour>
+			<hour>7</hour>
+			<hour>8</hour>
+		</skyphours>
+		<copyright>AroaGO</copyright>
+		<lastBuildDate>Mon, 18 Jan 2021 23:20:00 +0100</lastBuildDate>
+		<item>
+			<title>Ejercicio 10</title>
+			<link>
+				<![CDATA[ http://192.168.2.119/ud02/10/index.html]]>
+			</link>
+			<guid isPermaLink="true">http://192.168.2.119/ud02/10/index.html</guid>
+			<description>
+			<![CDATA[<i> Se pide crear la hoja de estilos teniendo en
+			cuenta las especificaciones dadas dentro de la hoja de estilos. Es necesario añadir el título, etiquetas meta, favicon, … y no se puede modificar
+			ninguna etiqueta del body.</i>]]>
+			</description>
+			<enclosure url="http://192.168.2.119/ud03/img/T3E1P10.PNG" type="image/png" />
+			<author>Paca La Piraña</author>
+			<pubDate>Wed, 13 Jan 2021 08:00:00 EST</pubDate>
+		</item>
+		<item>
+			<title>Ejercicio 11</title>
+			<link>
+				<![CDATA[ http://192.168.2.119/ud02/11/index.html]]>
+			</link>
+			<guid isPermaLink="true">http://192.168.2.119/ud02/11/index.html</guid>
+			<description>
+			<![CDATA[<i>contiene la creación de una tabla. Se pide crear la hoja de estilos teniendo en
+			cuenta las especificaciones dadas dentro de la hoja de estilos. Es necesario añadir el título, etiquetas meta, favicon, … y no se puede modificar
+			ninguna etiqueta del body.</i>]]>
+			</description>
+			<enclosure url="http://192.168.2.119/ud03/img/T3E1P11.PNG" type="image/png" />
+			<author>Antonia Garcia</author>
+			<pubDate>Mon, 18 Jan 2021 22:22:00 EST</pubDate>
+		</item>
+		<item>
+			<title>Ejercicio 12</title>
+			<link>
+				<![CDATA[ http://192.168.2.119/ud02/12/index.html]]>
+			</link>
+			<guid isPermaLink="true">http://192.168.2.119/ud02/12/index.html</guid>
+			<description>
+			<![CDATA[<i>Practica Curriculum, en la que se practican los iconos, las posiciones de los div.</i>]]>
+			</description>
+			<enclosure url="http://192.168.2.119/ud03/img/T3E1P12.PNG" type="image/png" />
+			<author>Elena Molina</author>
+		</item>
+		<item>
+			<title>Ejercicio 13</title>
+			<link>
+				<![CDATA[ http://192.168.2.119/ud02/13/index.html]]>
+			</link>
+			<guid isPermaLink="true">http://192.168.2.119/ud02/13/index.html</guid>
+			<description>
+			<![CDATA[<i>Practica Plantilla, en ella aplicamos y modificamos una plantilla ya creada</i>]]>
+			</description>
+			<enclosure url="http://192.168.2.119/ud03/img/T3E1P13.PNG" type="image/png" />
+			<pubDate>Mon, 18 Jan 2021 22:22:00 EST</pubDate>
+			<author>Aroa Granero</author>
+		</item>
+		<item>
+			<title>Ejercicio 14</title>
+			<link>
+				<![CDATA[ http://192.168.2.119/ud02/14/index.html]]>
+			</link>
+			<guid isPermaLink="true">http://192.168.2.119/ud02/14/index.html</guid>
+			<description>
+			<![CDATA[<i>Libros mas vendidos, se aplican funtes posiciones , menus y una plantilla</i>]]>
+			</description>
+			<enclosure url="http://192.168.2.119/ud03/img/T3E1P14.PNG" type="image/png" />
+			<author>La Veneno</author>
+			<pubDate>Wen, 20 Jan 2021 22:22:00 EST</pubDate>
+		</item>
+	</channel>
+	
+</rss>

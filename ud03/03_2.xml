@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://ww.w3.org/2005/Atom">
+		<id>http://192.168.2.119/</id>
+		<title>LMSGI-ATOM-AroaGraneroOmanas</title>
+		<updated>2020-01-20T18:30:00+01:00</updated>
+		<link rel="alternate" type="text/html" href="http://192.168.2.119/"/>
+			<link rel="alternate" type="text/html" href="http://192.168.2.119/ud03/03_02.xml"/>
+		<link href="http://192.168.2.119/"/>
+		<author>
+			<name>Aroa Granero Omanas</name>
+			<address>aroa.graoma@educa.jcyl.es</address>
+		</author>
+		<entry>
+			<title>Ejercicio 10</title>
+			<content> http://192.168.2.119/ud02/10/index.html</content>
+			<description><i> Se pide crear la hoja de estilos teniendo en
+			cuenta las especificaciones dadas dentro de la hoja de estilos. Es necesario añadir el título, etiquetas meta, favicon, … y no se puede modificar
+			ninguna etiqueta del body.</i></description>
+			<author>Paca La Piraña</author>
+			<updated>Wed, 20 Jan 2021 08:00:00 EST</updated>
+		</entry>
+		<entry>
+			<title>Ejercicio 11</title>
+			<content> http://192.168.2.119/ud02/11/index.html</content>
+			<description><i>contiene la creación de una tabla. Se pide crear la hoja de estilos teniendo en
+			cuenta las especificaciones dadas dentro de la hoja de estilos. Es necesario añadir el título, etiquetas meta, favicon, … y no se puede modificar
+			ninguna etiqueta del body.</i></description>
+			<author>Antonia Garcia</author>
+			<updated>Wed, 20 Jan 2021 08:00:00 EST</updated>
+		</entry>
+		<entry>
+			<title>Ejercicio 12</title>
+			<content> http://192.168.2.119/ud02/12/index.html</content>
+			<description><i>Practica Curriculum, en la que se practican los iconos, las posiciones de los div.</i></description>
+			<enclosure url="http://192.168.2.119/ud03/img/T3E1P12.PNG" type="image/png" />
+			<updated>Wed, 20 Jan 2021 08:00:00 EST</updated>
+			<author>Elena Molina</author>
+		</entry>
+		<entry>
+			<title>Ejercicio 13</title>
+			<content> http://192.168.2.119/ud02/13/index.html</content>
+			<description><i>Practica Plantilla, en ella aplicamos y modificamos una plantilla ya creada</i></description>
+			<updated>Wed, 20 Jan 2021 08:00:00 EST</updated>
+			<author>Aroa Granero</author>
+		</entry>
+		<entry>
+			<title>Ejercicio 14</title>
+			<content> http://192.168.2.119/ud02/14/index.html</content>
+			<description><i>Libros mas vendidos, se aplican funtes posiciones , menus y una plantilla</i></description>
+			<author>La Veneno</author>
+			<updated>Wed, 20 Jan 2021 08:00:00 EST</updated>
+		</entry>
+	
+</feed>
