@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email [
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anyo (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT fecha (dia,mes,anyo)>
+    <!ELEMENT ficherosAdj (nombre, tipo)>
+    <!ELEMENT email (remitente, destinatario+, fecha, asunto?, mensaje?, ficherosAdj*)>
+]>
 <email>
 	<remitente>miCasa@gmail.com</remitente>
 	<destinatario>MiMansion@gmail.com</destinatario>
