@@ -1,13 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <email>
-	<remitente>miCasa</remitente>
-	<destinatario>MiMansion</destinatario>
-	<fecha>19/01/2020</fecha>
+	<remitente>miCasa@gmail.com</remitente>
+	<destinatario>MiMansion@gmail.com</destinatario>
+        <destinatario>MiChale@gmail.com</destinatario>
+	<fecha>
+            <dia>19</dia>
+            <mes>06</mes>
+            <anyo>2021</anyo>
+        </fecha>
 	<asunto>Me mudo de casa</asunto>
-	<mensaje>Hola me he hecho millonaria y me cambio de casa</mensaje>
+	<mensaje/>
 	<ficherosAdj>
-		<nombre>Aroa</nombre>
-		<tipo>MIME</tipo>
+		<nombre>Aroa.pdf</nombre>
+		<tipo>application/pdf</tipo>
+	</ficherosAdj>
+        <ficherosAdj>
+		<nombre>imagen.png</nombre>
+		<tipo>image/png</tipo>
 	</ficherosAdj>
 </email>
 
