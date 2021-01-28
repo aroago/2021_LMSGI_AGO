@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email[
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+    <!ELEMENT fecha EMPTY>
+    <!ELEMENT ficherosAdj (#PCDATA)>
+    <!ELEMENT email(remitente, destinatario+, fecha,asunto?,mensaje?,ficherosAdj*)>
+    <!ATTLIST fecha dia CDATA #REQUIRED
+                     mes CDATA #REQUIRED
+                     anyo CDATA #REQUIRED>
+    <!ATTLIST ficherosAdj tipo CDATA #IMPLIED>
+    
+]>
+<email>
+    <remitente>miCasa@gmail.com</remitente>
+    <destinatario>MiMansion@gmail.com</destinatario>
+    <destinatario>MiChale@gmail.com</destinatario>
+    <fecha dia="19" mes="06" anyo="2021"/> 
+    <asunto>Me mudo de casa</asunto>
+    <mensaje/>
+    <ficherosAdj tipo="aplicacion/pdf"> Aroa.pdf</ficherosAdj>
+    <ficherosAdj tipo="image/png">imagen.png</ficherosAdj>
+</email>
