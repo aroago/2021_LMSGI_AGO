@@ -1,0 +1,7 @@
+<!ELEMENT descipcion (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ELEMENT fecha (dia,mes,ano)>
+<!ELEMENT evento (descripcion, fecha)>
+<!ELEMENT hechosHistoricos (evento+)>
