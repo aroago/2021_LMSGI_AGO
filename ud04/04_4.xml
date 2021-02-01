@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE horario SYSTEM '04_4.dtd'>
+
+<horario>
+        <lunes>
+            <EDD prof="MUP">
+                <hora>8:30-9:20</hora>
+            </EDD>
+            <SINF prof="ncb">
+                <hora>9:20-11:00</hora>
+            </SINF>
+            <PROG prof="acf">
+                <hora>11:00-11:50</hora>
+            </PROG>
+            <recreo>
+                <hora>11:50-12:15</hora>
+            </recreo>
+            <PROG prof="acf">
+                <hora>12:15-13:05</hora>
+            </PROG>
+        </lunes>
+        <martes>
+            
+        </martes>
+        <miercoles>
+            
+        </miercoles>
+        <jueves>
+            
+        </jueves>
+        <viernes>
+            
+        </viernes>
+</horario>
