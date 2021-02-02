@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT grupo (estudiante*)>
+<!ELEMENT estudiante (#PCDATA)>
+<!ATTLIST estudiante cod ID #REQUIRED
+                     tutor1 IDREF #IMPLIED
+                     tutor2 IDREF #IMPLIED>
+

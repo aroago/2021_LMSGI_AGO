@@ -4,31 +4,87 @@
 <horario>
         <lunes>
             <EDD prof="MUP">
-                <hora>8:30-9:20</hora>
+                8:30-9:20
             </EDD>
             <SINF prof="ncb">
-                <hora>9:20-11:00</hora>
+                9:20-11:00
             </SINF>
             <PROG prof="acf">
-                <hora>11:00-11:50</hora>
+                11:00-11:50
             </PROG>
             <recreo>
-                <hora>11:50-12:15</hora>
+                11:50-12:15
             </recreo>
             <PROG prof="acf">
-                <hora>12:15-13:05</hora>
+                12:15-13:05
             </PROG>
+             <Libre>
+                13:05-13:55
+            </Libre>
         </lunes>
         <martes>
-            
+            <BBDD prof="meli">
+               8:30-10:10
+            </BBDD>
+            <PROG prof="acf">
+               10:10-11:50
+            </PROG>
+            <recreo>
+                11:50-12:15
+            </recreo>
+            <LMSGI prof="arn">
+                12:15-13:55
+            </LMSGI>
         </martes>
         <miercoles>
-            
+            <PROG prof="acf">
+                8:30-10:10
+            </PROG>
+            <Libre>
+                10:10-11:00
+            </Libre>
+            <BBDD prof="meli">
+               11:00-11:50
+            </BBDD>
+            <recreo>
+               11:50-12:15
+            </recreo>
+            <BBDD prof="meli">
+               12:15-13:05
+            </BBDD>
+            <EDD prof="MUP">
+                13:05-13:55
+            </EDD>
         </miercoles>
         <jueves>
-            
+            <LMSGI prof="arn">
+                  8:30-10:10
+            </LMSGI>
+            <PROG prof="acf">
+               10:10-11:50
+            </PROG>
+            <recreo>
+                11:50-12:15
+            </recreo>
+            <SINF prof="ncb">
+                12:15-13:55
+            </SINF>
         </jueves>
         <viernes>
-            
+            <EDD prof="MUP">
+                8:30-9:20
+            </EDD>
+            <SINF prof="ncb">
+                9:20-11:00
+            </SINF>
+            <Libre>
+               11:00-11:50
+            </Libre>
+            <recreo>
+                11:50-12:15
+            </recreo>
+            <BBDD prof="meli">
+               12:15-13:55
+            </BBDD>
         </viernes>
 </horario>

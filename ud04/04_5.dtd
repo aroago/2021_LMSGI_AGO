@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!ELEMENT city (#PCDATA)>
-<!ELEMENT state (#PCDATA)>
-<!ELEMENT zip (#PCDATA)>
-<!ELEMENT firstName (#PCDATA)>
-<!ELEMENT lastName (#PCDATA)>
-<!ELEMENT contactNo (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT adress (city,state,zip)>
-<!ELEMENT employee (firstName, lastName,contactNo,email,address)>
-<!ELEMENT company (employee)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Zip (#PCDATA)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT ContactNo (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Address (City,State,Zip)>
+<!ELEMENT Employee (FirstName, LastName,ContactNo?,Email+,Address)>
+<!ELEMENT Company (Employee)>
 

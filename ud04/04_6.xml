@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stlesheet type="text/css" href="06.css?>
+<!DOCTYPE lenguaje SYSTEM '04_6.dtd'>
+<lenguaje>
+    <codigo>
+        <nombre>HTML </nombre>
+        <Ejemplo>
+            <![CDATA[
+                <h2>hola manuela</h2>
+                <p>Hoy manuela se casa y se pone de blanco</p>
+                ]]>
+        </Ejemplo>
+    </codigo>
+    <codigo>
+        <nombre>JAVA </nombre>
+        <Ejemplo>
+            <![CDATA[
+                public class P2{
+                    public static void main (String [] args) {
+                        String nombre;
+                        nombre="aroa";
+                        System.out.println("Programa realizado por"+ nombre);	 
+                    }
+                }
+            ]]>   
+        </Ejemplo>
+    </codigo>
+</lenguaje>

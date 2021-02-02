@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE grupo SYSTEM '04_7.dtd'>
+<grupo>
+    <estudiante cod="E1" tutor1="E2" tutor2="E3">
+        Aroa
+    </estudiante>
+    <estudiante cod="E2">
+        Jaime
+    </estudiante>
+    <estudiante cod="E3">
+        Silvia
+    </estudiante>
+</grupo>
