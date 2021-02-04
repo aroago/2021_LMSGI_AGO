@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE horario SYSTEM '04_10.dtd'>
+
+<horario curso="DAW1">
+    <modulos>
+        <modulo codM="EDD">Entorno de Desarrollo</modulo>
+        <modulo codM="LMSGI">Lenguaje De Marcas y Sistemas de Gestion de la Informatica</modulo>
+        <modulo codM="PROG">Programacion</modulo>
+        <modulo codM="BBDD">Bases De Datos</modulo>
+        <modulo codM="FOL">Formacion y Orientacion Laboral</modulo>
+        <modulo codM="SINF">Sistemas Informaticos</modulo>
+    </modulos>
+    <profesores>
+        <profesor codP="MUP">Marcos Unzueta Puente</profesor>
+        <profesor codP="ARN">Amor Rodriguez Navarro </profesor>
+        <profesor codP="ACF">Ambrosio Casado Fernández </profesor>
+        <profesor codP="HRO">Hermelinda Ramos Osorio </profesor>
+        <profesor codP="MAM">María del Cielo Alejo Mulas </profesor>
+        <profesor codP="NCB">Natividad Crespo Belver </profesor>
+    </profesores>
+    <imparte>
+        <asignatura codM="EDD" codProfesor="MUP"></asignatura>
+        <asignatura codM="LMSGI" codProfesor="ARN HRO"></asignatura>
+        <asignatura codM="PROG" codProfesor="ACF"></asignatura>
+        <asignatura codM="BBDD" codProfesor="HRO"></asignatura>
+        <asignatura codM="FOL" codProfesor="MAM"></asignatura>
+        <asignatura codM="SINF" codProfesor="NCB"></asignatura>
+    </imparte>
+    <grupo idgrupo="DAW1" codT="MUP">
+        <hora entrada="08:30" salida="09:20">
+            <dia_sem dia="lunes" num="1">LUNES</dia_sem>
+            <dia_sem dia="viernes" num="1">VIERNES</dia_sem>
+        </hora>
+        <hora entrada="08:30" salida="10:10">
+            <dia_sem dia="martes" num="2">MARTES</dia_sem>
+            <dia_sem dia="miercoles" num="2">MIERCOLES</dia_sem>
+            <dia_sem dia="jueves" num="2">JUEVES</dia_sem>
+        </hora>
+        <hora entrada="09:20" salida="11:00">
+            <dia_sem dia="lunes" num="2">LUNES</dia_sem>
+            <dia_sem dia="viernes" num="2">VIERNES</dia_sem>
+        </hora>
+        <hora entrada="10:10" salida="11:50">
+            <dia_sem dia="martes" num="2">MARTES</dia_sem>
+            <dia_sem dia="jueves" num="2">JUEVES</dia_sem>
+        </hora>
+        <hora entrada="10:10" salida="11:00">
+            <dia_sem dia="miercoles" num="1">MIERCOLES</dia_sem>
+        </hora>
+        <hora entrada="11:00" salida="11:50">
+            <dia_sem dia="lunes" num="1">LUNES</dia_sem>
+            <dia_sem dia="miercoles" num="1">MIERCOLES</dia_sem>
+            <dia_sem dia="viernes" num="1">VIERNES</dia_sem>
+        </hora>
+        <hora entrada="11:50" salida="12:15">
+            <dia_sem dia="lunes" num="1">LUNES</dia_sem>
+            <dia_sem dia="martes" num="1">MARTES</dia_sem>
+            <dia_sem dia="miercoles" num="1">MIERCOLES</dia_sem>
+            <dia_sem dia="jueves" num="1">JUEVES</dia_sem>
+            <dia_sem dia="viernes" num="1">VIERNES</dia_sem>
+        </hora>
+        <hora entrada="12:15" salida="13:05">
+            <dia_sem dia="lunes" num="1">LUNES</dia_sem>
+            <dia_sem dia="miercoles" num="1">MIERCOLES</dia_sem>
+        </hora>
+        <hora entrada="12:15" salida="13:55">
+            <dia_sem dia="martes" num="2">MARTES</dia_sem>
+             <dia_sem dia="jueves" num="2">JUEVES</dia_sem>
+             <dia_sem dia="viernes" num="2">VIERNES</dia_sem>
+        </hora>
+        <hora entrada="13:05" salida="13:55">
+            <dia_sem dia="lunes" num="1">LUNES</dia_sem>
+            <dia_sem dia="miercoles" num="1">MIERCOLES</dia_sem>
+        </hora>
+    </grupo>
+</horario>
