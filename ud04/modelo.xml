@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<modelo
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='modelo.xsd'>
+    <curso>1</curso>
+    <Ciclo>DAW</Ciclo>
+    <nombreciclo>Desarrollo de Aplicaciones Wew</nombreciclo>
+    <codigoPostal>40600</codigoPostal>
+    <comentario>Este ciclo    es muy dificil     para gente comun</comentario>
+</modelo>
