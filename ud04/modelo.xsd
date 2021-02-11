@@ -53,16 +53,37 @@ descripcion_validacion de elemntos simples
                     </xs:simpleType>
                 </xs:element>
                 <xs:element name="temperatura">
-                <xs:simpleType>
-                    <xs:restriction base="xs:decimal">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
                             <xs:fractionDigits value="2"/>
                             <xs:totalDigits value="5"/>
                             <xs:minInclusive value="-50"/>
                             <xs:maxInclusive value="50"/>
-                    </xs:restriction>
-                </xs:simpleType>
+                        </xs:restriction>
+                    </xs:simpleType>
                 </xs:element>
-
+                <xs:element name="profesor">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="codP">
+                                    <xs:simpleType>
+                                        <xs:restriccion base="xs:string">
+                                            <xs:pattern value="[A-Z]{3}"/>
+                                        </xs:restriccion>
+                                    </xs:simpleType>
+                                </xs:attribute>  
+                                <xs:attribute name="modulo">
+                                    <xs:simpleType>
+                                        <xs:restriccion base="xs:string">
+                                            <xs:pattern value="[A-ZÑ]{4}"/>
+                                        </xs:restriccion>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
