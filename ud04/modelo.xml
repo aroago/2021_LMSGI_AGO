@@ -11,7 +11,8 @@ and open the template in the editor.
     xsi:noNamespaceSchemaLocation='modelo.xsd'>
     <curso>1</curso>
     <Ciclo>DAW</Ciclo>
-    <nombreciclo>Desarrollo de Aplicaciones Wew</nombreciclo>
+    <nombreciclo>Desarrollo de Aplicaciones Web</nombreciclo>
     <codigoPostal>40600</codigoPostal>
     <comentario>Este ciclo    es muy dificil     para gente comun</comentario>
+    <temperatura>32.50</temperatura>
 </modelo>
