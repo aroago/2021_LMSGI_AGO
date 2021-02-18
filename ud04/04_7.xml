@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE grupo SYSTEM '04_7.dtd'>
-<grupo>
-    <estudiante cod="E1" tutor1="E2" tutor2="E3">
+
+<grupo xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='04_7.xsd'>
+    <estudiante cod="E1" tutor="E2,E3">
         Aroa
     </estudiante>
     <estudiante cod="E2">

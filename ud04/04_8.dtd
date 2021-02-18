@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT lugares (#PCDATA|lugar)*>
 <!ELEMENT lugar (#PCDATA)>
+<!ATTLIST lugares
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED>
 

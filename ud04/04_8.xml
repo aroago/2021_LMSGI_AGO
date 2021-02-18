@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE lugares SYSTEM '04_8.dtd'>
 
-<lugares>
+<lugares xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='04_8.xsd'>
     En el
     <lugar>polo norte</lugar>
     hace mucho frio. Pero, en el

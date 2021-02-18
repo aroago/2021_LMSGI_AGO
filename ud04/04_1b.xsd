@@ -4,7 +4,6 @@
 @FechaCreación.- 09/02/2021
 @FechaModificacion - 18/02/2021
 -->
-
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
@@ -15,7 +14,7 @@
             nombre y el tipo MIME). No utilizar atributos.
         </xs:documentation>
         <xs:appinfo>
-            App XML01
+            App XML01b
         </xs:appinfo>
     </xs:annotation>
     <xs:element name="mail">
@@ -42,11 +41,10 @@
                             <xs:element name="tipo" type="xs:string">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="([A-Za-z])*[/]([a-z])*"/>
+                                        <xs:pattern value="[A-Za-z]*[/][a-z]*"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                             
                         </xs:simpleContent> 
                     </xs:complexType>
                 </xs:element>               
