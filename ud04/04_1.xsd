@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="email">
+        <xs:complexType>
+           <xs:sequence>
+                <xs:element name="remitente">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[A-ZÑa-z@0-9]"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="destinatario">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[A-ZÑa-z@0-9]"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="fecha">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dia">
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="1"/>
+                                     <xs:maxInclusive value="31"/> 
+                                </xs:restriction>
+                            </xs:element>
+                            <xs:element name="mes">
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="01"/>
+                                     <xs:maxInclusive value="12"/> 
+                                </xs:restriction>
+                            </xs:element>
+                            <xs:element name="anyo">
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0000"/>
+                                     <xs:maxInclusive value="9999"/> 
+                                </xs:restriction>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="asunto" type="xs:string" minOccurs="0"/>
+                <xs:element name="asunto" type="xs:string" minOccurs="0"/>
+                <xs:element name="fichero" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                             <xs:element name="tipo" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+           </xs:sequence>
+        </xs:complexType>
+    </xs:element>   
+        
+</xs:schema>

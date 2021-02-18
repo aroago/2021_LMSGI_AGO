@@ -13,7 +13,9 @@
     <!ELEMENT ficherosAdj (nombre, tipo)>
     <!ELEMENT email (remitente, destinatario+, fecha, asunto?, mensaje?, ficherosAdj*)>
 ]>
-<email>
+<email
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='04_1.xsd'>>
 	<remitente>miCasa@gmail.com</remitente>
 	<destinatario>MiMansion@gmail.com</destinatario>
         <destinatario>MiChale@gmail.com</destinatario>
