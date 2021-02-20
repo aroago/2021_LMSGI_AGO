@@ -10,49 +10,53 @@ and open the template in the editor.
            elementFormDefault="qualified">
     <xs:element name="horario">
         <xs:complexType>
-            <xs:simpleContent>
-                <xs:extension>
-                    <xs:attribute name="curso" type="xs:string"/>
-                </xs:extension>
-            </xs:simpleContent>
+            <xs:element name="modulos" type="tipoModulos"/>
+            <xs:complexType name="tipoModulo">
+                <xs:sequence>
+                    <xs:element name="modulo"/>
+                </xs:sequence>
+                <xs:attribute name="codM" type="ID" use="required"/>
+            </xs:complexType>  
+        </xs:complexType> 
+        <xs:element name="profesores" type="tipoProfesores"/>
+        <xs:complexType>
+            <xs:element name="profesor" type="tipoProfesores"/>
+            <xs:complexType name="tipoProfesor">
+                <xs:sequence>
+                    <xs:element name="profesor"/>
+                </xs:sequence>
+                <xs:attribute name="codP" type="ID" use="required"/>
+            </xs:complexType>
         </xs:complexType>
-        <xs:sequence>
-            <xs:element name="modulos">
-                <xs:complexType>
-                    <xs:element name="modulo">
-                        <xs:complexType>
-                            <xs:extension>
-                                <xs:attribute name="codM">
-                                    <xs:simpleType>
-                                        <xs:restriction base="xs:string">
-                                            <xs:enumeration value="EDD"/>
-                                            <xs:enumeration value="LMSGI"/>
-                                            <xs:enumeration value="PROG"/>
-                                            <xs:enumeration value="BBDD"/>
-                                            <xs:enumeration value="FOL"/>
-                                            <xs:enumeration value="SINF"/>
-                                            <xs:enumeration value="XXX"/>
-                                        </xs:restriction>
-                                    </xs:simpleType>
-                                </xs:attribute>
-                            </xs:extension>
-                        </xs:complexType>
-                    </xs:element>
-                </xs:complexType>
-            </xs:element>
-             <xs:element name="profesores">
-                <xs:complexType>
-                    <xs:element name="profesor">
-                        <xs:complexType>
-                            <xs:extension>
-                                <xs:attribute name="codP" type="xs:ID" use="required"/>
-                             
-                            </xs:extension>
-                        </xs:complexType>
-                    </xs:element>
-                </xs:complexType>
-            </xs:element>
-        </xs:sequence>
+        <xs:element name="imparte" type="tipoImparte"/>
+          <xs:complexType>
+            <xs:element name="imparte" type="tipoImparte"/>
+            <xs:complexType name="tipoAsignatura">
+                <xs:sequence>
+                    <xs:element name="asignatura"/>
+                </xs:sequence>
+                <xs:attribute name="codM" type="xs:string" use="required">
+                    <xs:simpleType>
+                        <xs:restriction base="ID">
+                            <xs:pattern value="EDD|LMSGI|PROG|BBDD|FOL|SINF|XXX"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="codProfesor" type="IDREFS" use="required"/>
+            </xs:complexType>
+        </xs:complexType>
+        <xs:element name="grupo"  maOccurs="4"/> 
+        <xs:complexType>
+            <xs:element name="grupo" type="tipoGropo"/>
+            <xs:complexType name="tipoHora">
+                <xs:sequence>
+                    <xs:element name="hora"/>
+                </xs:sequence>
+                <xs:attribute name="entrada" type="xs:string" use="required"/>
+                <xs:attribute name="salida" type="xs:string" use="required"/>
+            </xs:complexType>
+        </xs:complexType>
         
+       
     </xs:element>
 </xs:schema>

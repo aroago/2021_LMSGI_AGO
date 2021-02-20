@@ -3,7 +3,7 @@
     <!ELEMENT continente (#PCDATA)>
     <!ELEMENT pais (#PCDATA)>
     <!ELEMENT capital (#PCDATA)>
-    <!ELEMENT localizacion (continete, pais, capital)>
+    <!ELEMENT localizacion (continente, pais, capital)>
     <!ELEMENT tierra (localizacion+)>
     <!ATTLIST tierra
     xsi:noNamespaceSchemaLocation CDATA #IMPLIED

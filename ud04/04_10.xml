@@ -2,7 +2,8 @@
 
 <!DOCTYPE horario SYSTEM '04_10.dtd'>
 
-<horario curso="DAW1">
+<horario curso="DAW1" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='04_10.xsd'>
     <modulos>
         <modulo codM="EDD">Entorno de Desarrollo</modulo>
         <modulo codM="LMSGI">Lenguaje De Marcas y Sistemas de Gestion de la Informatica</modulo>
