@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<!DOCTYPE hechosHistoricos[
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT ano (#PCDATA)>
+    <!ELEMENT fecha EMPTY>
+    <!ELEMENT evento (descripcion, fecha)>
+    <!ELEMENT hechosHistoricos (evento+)>
+    <!ATTLIST fecha dia CDATA "06">
+    <!ATTLIST fecha mes CDATA "9" >
+    <!ATTLIST fecha ano CDATA "2001">
+]>
+
+<hechosHistoricos>
+    <evento>
+        <descripcion>Se funda YouTube</descripcion>
+        <fecha dia="15" mes="2" ano="2005"/>
+    </evento>
+    <evento>
+        <descripcion>Se funda Google</descripcion>
+        <fecha dia="4" mes="9" ano="1998"/>
+    </evento>
+    <evento>
+        <descripcion>Se funda Facebook</descripcion>
+        <fecha dia="4" mes="2" ano="2004"/>
+    </evento>
+</hechosHistoricos>
+
+
+

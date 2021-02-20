@@ -35,5 +35,4 @@ div:nth-child(5){
 }
 div:nth-child(6){
 	background-image: url('../img/puntonegro.png'), url('../img/puntonegro.png'), url('../img/puntonegro.png'), url('../img/puntonegro.png'), url('../img/puntonegro.png'), url('../img/puntonegro.png');
-	background-position: 5% 5%,95% 95%, 95% 5%, 5% 95%, 5% 50%,95% 50% ;
-}
+	background-position: 5% 5%,95% 95%, 95% 5%, 5% 95%, 5% 50%,95% 50% ;}

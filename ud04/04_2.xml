@@ -5,8 +5,12 @@
     <!ELEMENT capital (#PCDATA)>
     <!ELEMENT localizacion (continete, pais, capital)>
     <!ELEMENT tierra (localizacion+)>
+    <!ATTLIST tierra
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED>
 ]>
-<tierra>
+<tierra xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='04_2.xsd'>
 	<localizacion>
 		<continente>Europa</continente>
 		<pais>Alemania</pais>

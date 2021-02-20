@@ -5,3 +5,6 @@
 <!ELEMENT fecha (dia,mes,ano)>
 <!ELEMENT evento (descripcion, fecha)>
 <!ELEMENT hechosHistoricos (evento+)>
+<!ATTLIST hechosHistoricos
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED>
