@@ -22,7 +22,7 @@ en él se guarda las características de los portátiles.
             <memoria unidad_de_medida="Gb">8GB</memoria>
             <tipo>DDR3</tipo>
         </ram>
-        <disco capacidad="Gb">256Gb SSD</disco>
+        <disco capacidad="Gb" tipo="SSD">256Gb SSD</disco>
         <pantalla>
             <dimension>15.6 pulgadas</dimension>
             <resolucion>1266x768</resolucion>
@@ -45,7 +45,7 @@ en él se guarda las características de los portátiles.
             <memoria unidad_de_medida="Gb">8GB</memoria>
             <tipo>DDR3</tipo>
         </ram>
-         <disco capacidad="Gb">256Gb SSD</disco>
+         <disco capacidad="Gb" tipo="SSD">256Gb SSD</disco>
         <pantalla>
             <dimension>15.6 pulgadas</dimension>
             <resolucion>1266x768</resolucion>

@@ -8,24 +8,90 @@ and open the template in the editor.
 <xs:schema version="1.0"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified">
+    <xs:simpleType name="tipoMedida">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Mb|Gb|Tb"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:element name="catalogo">
         <xs:complexType>
-            <xs:element name="portatil">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="referencia"></xs:element>
-                        <xs:element name="nombre"></xs:element>
-                        <xs:element name="fabricante"></xs:element>
-                        <xs:element name="procesador"></xs:element>
-                        <xs:element name="ram"></xs:element>
-                        <xs:element name="disco"></xs:element>
-                        <xs:element name="pantalla"></xs:element>
-                        <xs:element name="grafica"></xs:element>
-                        <xs:element name="fotos"></xs:element>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
+            <xs:sequence>
+                <xs:element name="portatil" minOccurs="0" maxOccurs="unbouned">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="referencia">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z]{2}[0-9]{5}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="nombre" type="xs:String"></xs:element>
+                            <xs:element name="fabricante">
+                                <xs:complexType>
+                                    <xs:atribute name="nombre"  use="required">
+                                        <xs:simpleTipe base="string">
+                                            <xs:pattern value="LENOVO|HP|MSI|APPLE|ASUS|DELL|DESCONOCIDO"/>
+                                        </xs:simpleTipe>
+                                    </xs:atribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="procesador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombreP" type="xs:string"/>
+                                        <xs:element name="cache">
+                                            <xs:complexType>
+                                                <xs:extension base="xs:positiveInteger">
+                                                    <xs:attribute name="tamanyo" type="xs:string" default="Gb"/>
+                                                </xs:extension>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="numero" type="xs:byte"></xs:element>
+                                        <xs:element name="velocidad" Type="xs:float" ></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ram">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="memoria">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:">
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tipo" tipo=""/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="disco">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:positiveInteger">
+                                             <xs:attribute name="tipo" type="xs:string"/>
+                                                <xs:attribute name="media" type="xs:string" default="Gb"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="pantalla">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dimension" type="xs:string"/>
+                                        <xs:element name="resolucion" type="xs:string"/>
+                                        <xs:element name="maxima" type="xs:string" minOccurs="0"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="grafica" type="xs:string"/>
+                            <xs:element name="foto" type="xs:image/jpg" maxOccurs="unbouned"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
         </xs:complexType>
-        
     </xs:element>       
 </xs:schema>

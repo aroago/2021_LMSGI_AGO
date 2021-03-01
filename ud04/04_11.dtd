@@ -12,7 +12,7 @@ and open the template in the editor.
 -->
 
 <!-- TODO define your own vocabulary/syntax. Example follows:  -->
-<!ELEMENT catalogo (portatil+)>
+<!ELEMENT catalogo (portatil*)>
 <!ATTLIST catalogo
     xsi:noNamespaceSchemaLocation CDATA #IMPLIED
     xmlns:xsi CDATA #IMPLIED>
@@ -38,8 +38,9 @@ and open the template in the editor.
 <!ELEMENT tipo (#PCDATA)>
 <!ELEMENT disco (#PCDATA)>
 <!ATTLIST disco
+          tipo (SSD|HDD) #REQUIRED
           capacidad (Mb|Gb|Tb) #REQUIRED>
-<!ELEMENT pantalla (dimension,resolucion,resolucion_max*)>
+<!ELEMENT pantalla (dimension,resolucion,resolucion_max?)>
 <!ELEMENT dimension (#PCDATA)>
 <!ELEMENT resolucion (#PCDATA)>
 <!ELEMENT resolucion_max (#PCDATA)>
