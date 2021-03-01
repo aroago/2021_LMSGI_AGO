@@ -87,7 +87,7 @@ and open the template in the editor.
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="grafica" type="xs:string"/>
-                            <xs:element name="fotos" type="xs:image/jpg" maxOccurs="unbouned"></xs:element>
+                            <xs:element name="foto" type="xs:image/jpg" maxOccurs="unbouned"></xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
