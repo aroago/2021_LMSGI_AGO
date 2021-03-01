@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="receta">
+        <xs:complexType>
+            <xs:atribute name="plato"  use="required">
+                <xs:simpleTipe base="string">
+                    <xs:pattern value="primero|segundo|postre"/>
+                </xs:simpleTipe>
+            </xs:atribute>
+            <xs:sequence>
+                <xs:element name="nombre" type="string"/>
+                <xs:element name="descripcion" type="string"/>
+                <xs:element name="tiempo">
+                    <xs:complexType>
+                        <xs:atribute name="preparacion"  type="string" use="required"/>
+                        <xs:atribute name="plato"  type="string"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ingredientes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ingridiente" minOccurs="0" maxOccurs="unbouned">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombrei" type="string"/>
+                                        <xs:element name="cantidad" minOccurs="0" maxOccurs="unbouned">
+                                            <xs:complexType>
+                                                <xs:atribute name="unidad"  use="required">
+                                                    <xs:simpleTipe base="string">
+                                                        <xs:pattern value="gramos|pizca|mililitros|cucharada|chorro"/>
+                                                    </xs:simpleTipe>
+                                                </xs:atribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>   
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="instrucciones">
+                    <xs:complexType>
+                        <xs:element name="paso" type="xs:string" minOccurs="0" maxOccurs="unbouned" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

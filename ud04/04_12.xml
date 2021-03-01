@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE receta SYSTEM '04_12.dtd'>
+<receta plato="primero" xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='04_12.xsd'>
+    <nombre>Rissoto milanesa</nombre>
+    <descripcion>receta de 20 min</descripcion>
+    <tiempo preparacion="" coccion="20">min</tiempo>
+    <ingredientes>
+        <ingrediente>
+            <nombrei>arroz</nombrei>
+            <cantidad unidad="gramos">500</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombrei>cebolla</nombrei>
+            <cantidad>1</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombrei>azafran</nombrei>
+            <cantidad unidad="pizca">1</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombrei>queso parmesano</nombrei>
+            <cantidad unidad="gramos">100</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombrei>Sal</nombrei>
+        </ingrediente>
+        <ingrediente>
+            <nombrei>Pimienta</nombrei>
+        </ingrediente>
+        <ingrediente>
+            <nombrei>caldo</nombrei>
+            <cantidad unidad="mililitros">1000</cantidad>
+        </ingrediente>
+        <ingrediente>
+            <nombrei>vino blanco</nombrei>
+            <cantidad unidad="chorro">1</cantidad>
+        </ingrediente>
+    </ingredientes>
+    <instrucciones>
+        <paso>Picamos la cebolla y la pochamos con la mitad
+        de la mantequilla.</paso>
+        <paso>Cuando este transparente,echamos el azafran,
+        el vino y dejamos que reduzca.</paso>
+        <paso>A continuacion, incorporamos el arroz,
+        lo sofreimos un poco.</paso>
+        <paso>Vamos anadiendo el caldo caliente poco a poco
+        mientras removemos</paso>
+        <paso>Salpimentamos.</paso>
+        <paso>Caundo este casi hecho, agregamos el resto de 
+        la mantequilla y el queso</paso>
+        <paso>Servimos enseguida.</paso>
+    </instrucciones>
+</receta>

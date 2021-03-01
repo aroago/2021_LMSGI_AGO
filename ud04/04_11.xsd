@@ -71,8 +71,8 @@ and open the template in the editor.
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:positiveInteger">
-                                             <xs:attribute name="tipo" type="xs:string"/>
-                                                <xs:attribute name="media" type="xs:string" default="Gb"/>
+                                            <xs:attribute name="tipo" type="xs:string"/>
+                                            <xs:attribute name="media" type="xs:string" default="Gb"/>
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
