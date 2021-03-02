@@ -12,7 +12,7 @@
         preparacion CDATA #REQUIRED
         coccion CDATA #IMPLIED>
 <!ELEMENT ingredientes (ingrediente+)>
-<!ELEMENT ingrediente (nombrei,cantidad?)>
+<!ELEMENT ingrediente (nombre,cantidad?)>
 <!ELEMENT nombrei (#PCDATA)>
 <!ELEMENT cantidad (#PCDATA)>
 <!ATTLIST cantidad
