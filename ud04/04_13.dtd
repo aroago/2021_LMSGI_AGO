@@ -1,6 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-
-
 <!ELEMENT pintores (pintor+)>
 <!ATTLIST pintores
         xsi:noNamespaceSchemaLocation CDATA #IMPLIED
