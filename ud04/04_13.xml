@@ -21,7 +21,7 @@ and open the template in the editor.
             <acontecimiento etapa="muerte">El 23 de enero de 1989, oyendo su disco favorito —Tristán e Isolda, de Richard Wagner— 
                 murió a causa de una parada cardiorrespiratoria</acontecimiento>
         </biografia>
-        <cuadros numCuadros="">
+        <cuadros numCuadros="35">
             <cuadro periodo="surrealismo" anyo="1931">La Persistencia De La Memeoria</cuadro>
             <cuadro periodo="surrealismo">El Telefono Langosta</cuadro>
             <cuadro periodo="surrealismo" anyo="1944">Sueño causado por el vuelo de una abeja alrededor de una granada un segundo antes de despertar</cuadro>
