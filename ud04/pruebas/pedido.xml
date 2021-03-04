@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<ns1:pedido
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='https://www.molgra.com/pedido'
+    xsi:schemaLocation='https://www.molgra.com/pedido pruebaSchema.xsd'>
+    <ns1:opdenPedido>PE01</ns1:opdenPedido>
+    <ns1:fecha>2021-03-04</ns1:fecha>
+    <ns1:id>2003</ns1:id>
+</ns1:pedido>

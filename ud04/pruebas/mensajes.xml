@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<msg:mensaje
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:po='https://www.molgra.com/pedido'
+    xmlns:msg='https://www.molgra.com/mensajes'
+    xsi:schemaLocation='https://www.molgra.com/pedido pruebaSchema.xsd
+   https://www.molgra.com/mensajes mensajes.xsd'>
+    <msg:emisor>Directora@ieslossauces.es</msg:emisor>
+    <msg:destinatario>aroagranero@ieslossauces.es</msg:destinatario>
+    <msg:mensaje>
+        <po:pedido>
+            <po:opdenPedido>PE01</po:opdenPedido>
+            <po:fecha>2020-06-19</po:fecha>
+            <po:id>2003</po:id>
+        </po:pedido>
+    </msg:mensaje>
+</msg:mensaje>
