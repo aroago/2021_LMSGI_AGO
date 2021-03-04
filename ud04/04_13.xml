@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE pintores SYSTEM '04_13.dtd'>
+<pintores xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+           xsi:noNamespaceSchemaLocation='04_13.xsd'>
+    <pintor nombre="dali">
+        <nombre>Salvador Dali</nombre>
+        <apellidos>i Domenech</apellidos>
+        <fechaNac>1904-5-11</fechaNac>
+        <fechaDef>1989-1-23</fechaDef>
+        <biografia>
+            <acontecimiento etapa="nacimiento">Salvador Dalí nació a las 8:45 horas del 11 de mayo de 1904,
+                en el número 20 de la calle Monturio, en Figueras,
+                provincia de Gerona</acontecimiento>
+            <acontecimiento etapa="vida">Juventud en Madrid y París...</acontecimiento>
+            <acontecimiento etapa="muerte">El 23 de enero de 1989, oyendo su disco favorito —Tristán e Isolda, de Richard Wagner— 
+                murió a causa de una parada cardiorrespiratoria</acontecimiento>
+        </biografia>
+        <cuadros numCuadros="">
+            <cuadro periodo="surrealismo" anyo="1931">La Persistencia De La Memeoria</cuadro>
+            <cuadro periodo="surrealismo">El Telefono Langosta</cuadro>
+            <cuadro periodo="surrealismo" anyo="1944">Sueño causado por el vuelo de una abeja alrededor de una granada un segundo antes de despertar</cuadro>
+        </cuadros>
+        <imagen>foto.jpg</imagen>
+        <imagen>foto2.jpg</imagen>
+    </pintor>
+</pintores>
