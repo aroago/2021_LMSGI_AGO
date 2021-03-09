@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0">
+  <channel>
+		<title>LMSGI-RSS-AroaGraneroOmanas</title>
+		<link>http://mapaestelar.com/</link>
+		<description>
+			Noticias sobre planetas Sistema Solar
+		</description>
+                <Inputdays>
+                    <day>5</day>
+                </Inputdays>
+                <copyright>AroaGO</copyright>
+                <item>
+			<title>merurio</title>
+			<link>
+				<![CDATA[ http://mapaestelar/mercurio.html]]>
+			</link>
+			<guid isPermaLink="true"> http://mapaestelar/mercurio.html</guid>
+			<description>
+			<![CDATA[<i> mercurio un planeta muy bonito con sus formas y cosas de planetas ,
+                         sin vida hasta la fecha</i>]]>
+			</description>
+			<enclosure url=" http://mapaestelar/mercurio.PNG" type="image/png" />
+			<author>Jonh Paso</author>
+			<pubDate>Wed, 09 Jan 2021 13:28:00 EST</pubDate>
+		</item>
+                <item>
+			<title>venus</title>
+			<link>
+				<![CDATA[ http://mapaestelar/venus.html]]>
+			</link>
+			<guid isPermaLink="true"> http://mapaestelar/tierra.html</guid>
+			<description>
+			<![CDATA[<i> Venus plateta liso con un color pastel que parece
+                                    una bola de chicle, devido a su tamaño no es comestible por 
+                                    si alguno lo estaba pensando</i>]]>
+			</description>
+			<enclosure url=" http://mapaestelar/venus.PNG" type="image/png" />
+			<author>Richard Blue</author>
+			<pubDate>Wed, 09 Jan 2021 13:28:00 EST</pubDate>
+                </item>
+                <item>
+			<title>tierra</title>
+			<link>
+				<![CDATA[ http://mapaestelar/tierra.html]]>
+			</link>
+			<guid isPermaLink="true"> http://mapaestelar/tierra.html</guid>
+			<description>
+			<![CDATA[<i> Que seria de no sotros sin la tierra , planeta azul,unico planeta
+                            descubierto hasta la fecha con vida, aunque algunos seres vivos 
+                            parezcan venir de otro planeta.</i>]]>
+			</description>
+			<enclosure url=" http://mapaestelar/tierra.PNG" type="image/png" />
+			<author>Mary Patio</author>
+			<pubDate>Wed, 09 Jan 2021 13:28:00 EST</pubDate>
+		</item>
+  </channel>  
+</rss>

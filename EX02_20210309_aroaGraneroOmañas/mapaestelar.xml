@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE mapaEstelar SYSTEM 'mapaestelar.dtd'>
+<mapaEstelar xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+           xsi:noNamespaceSchemaLocation='mapaestelar.xsd'>
+    <constelacion nombreLatin="ursa Maior">
+        <Nombre_Español>Osa Mayor</Nombre_Español>
+        <superficie>1279,7</superficie>
+        <estrellas num_estre="209">
+            <asterismo>7</asterismo>
+            <masBrillante luminosidad="1,77">Alion</masBrillante>
+        </estrellas>
+        <objetos>
+            <cumulos>false</cumulos>
+            <nebulosas>true</nebulosas>
+            <galaxias>true</galaxias>
+            <cuasares>false</cuasares>
+            <lluviaMeteoros>Kappa Ursa Mayoridas</lluviaMeteoros>
+            <lluviaMeteoros>Lamba Ursa Mayoridas</lluviaMeteoros>
+            <lluviaMeteoros>Psi Ursa Mayoritaria</lluviaMeteoros>
+        </objetos>
+        <colindantes>
+            <nombre>Bootes</nombre>
+            <nombre>Camelopardalis</nombre>
+            <nombre>Draco</nombre>
+            <nombre>Leo</nombre>
+            <nombre>Lynx</nombre>
+        </colindantes>
+        <observacion>
+            <hemisferio>Norte</hemisferio>
+            <mes>04</mes>
+            <hora>21:00:00</hora>
+        </observacion>
+    </constelacion>
+</mapaEstelar>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT mapaEstelar (constelacion|estrella)?>
+<!ATTLIST mapaEstelar
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED>
+<!ELEMENT constelacion (Nombre_Español,superficie,estrellas,objetos,colindantes,observacion)>
+<!ATTLIST constelacion
+    nombreLatin CDATA #REQUIRED>
+<!ELEMENT Nombre_Español (#PCDATA)>
+<!ELEMENT superficie (#PCDATA)>
+<!ELEMENT estrellas (asterismo,masBrillante)>
+<!ATTLIST estrellas
+    num_estre CDATA #IMPLIED>
+<!ELEMENT asterismo (#PCDATA)>
+<!ELEMENT masBrillante (#PCDATA)>
+<!ATTLIST masBrillante
+    luminosidad CDATA #IMPLIED>
+<!ELEMENT objetos (cumulos,nebulosas,galaxias,cuasares,lluviaMeteoros+)>
+<!ELEMENT cumulos (#PCDATA)>
+<!ELEMENT nebulosas (#PCDATA)>
+<!ELEMENT galaxias (#PCDATA)>
+<!ELEMENT cuasares (#PCDATA)>
+<!ELEMENT lluviaMeteoros (#PCDATA)>
+<!ELEMENT colindantes (nombre*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT observacion (hemisferio,mes,hora)>
+<!ELEMENT hemisferio (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+
+<!ELEMENT estrella (nombre,constelacion,distancia,luminosidad,temperatura,masa)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia
+    unidadM CDATA #FIXED "años Luz">
+<!ELEMENT luminosidad (#PCDATA)>
+<!ATTLIST luminosidad
+    medida CDATA #FIXED "soles">
+<!ELEMENT temperatura (#PCDATA)>
+<!ATTLIST temperatura
+    medida CDATA #FIXED "K">
+<!ELEMENT masa (#PCDATA)>
+<!ATTLIST masa
+    medida CDATA "soles">
+
