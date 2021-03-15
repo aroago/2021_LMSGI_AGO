@@ -11,17 +11,23 @@ and open the template in the editor.
     <xs:element name="grupo">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="estudiante">
-                    <xs:complexType>
+                <xs:element name="estudiante" maxOccurs="unbounded">
+                    <xs:complexType>  
                         <xs:simpleContent>
-                            <xs:extension>
-                                 <attribute name="tutor" type="xs:IDREFS" use="required"/>
-                                 <attribute name="cod" type="xs:ID" use="opcional"/>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="cod" use="required">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:ID">
+                                            <xs:pattern value="[a-z A-Z][1-9]"/>
+                                        </xs:restriction>
+                                        </xs:simpleType>
+                                </xs:attribute>
+                                <xs:attribute name="tutor" use="optional"/>
                             </xs:extension>
                         </xs:simpleContent>
-                    </xs:complexType>
+                    </xs:complexType> 
                 </xs:element>
-                </xs:sequence>
-            </xs:complexType>
-    </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>       
 </xs:schema>

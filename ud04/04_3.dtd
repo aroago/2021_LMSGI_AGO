@@ -1,4 +1,4 @@
-<!ELEMENT descipcion (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT dia (#PCDATA)>
 <!ELEMENT mes (#PCDATA)>
 <!ELEMENT ano (#PCDATA)>

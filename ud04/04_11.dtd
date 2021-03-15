@@ -1,50 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Aroa Granero Omañas
 -->
 
-<!--
-    TODO define vocabulary identification data
-    PUBLIC ID  : -//vendor//vocabulary//EN
-    SYSTEM ID  : http://server/path/__NAME__
--->
-
-<!-- TODO define your own vocabulary/syntax. Example follows:  -->
-<!ELEMENT catalogo (portatil*)>
+<!ELEMENT catalogo (portatil)*>
 <!ATTLIST catalogo
-    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
-    xmlns:xsi CDATA #IMPLIED>
-<!ELEMENT portatil (referencia,nombre,fabricante,procesador,ram,disco,pantalla,grafica,fotos*)>
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT portatil (referencia, nombre, fabricante, procesador, ram, disco, pantalla, grafica)>
 <!ELEMENT referencia (#PCDATA)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT fabricante EMPTY>
 <!ATTLIST fabricante
-        nombre (LENOVO|HP|MSI|APPLE|ASUS|DELL|DESCONOCIDO) #REQUIRED>
-<!ELEMENT procesador (nombreP,cache,n_Procesadores,velocidad)>
-<!ELEMENT nombreP (#PCDATA)>
+    nombre (LENOVO|HP|MSI|APPLE|ASUS|DELL|DESCONOCIDO) #REQUIRED>
+<!ELEMENT procesador (nombreP+, cache, nprocesadores, velocidad)>
 <!ELEMENT cache (#PCDATA)>
 <!ATTLIST cache 
-          tamanyo (Mb|Gb|Tb) "Gb">
-<!ELEMENT n_Procesadores (#PCDATA)>
+    tamanyo (MB|GB|TB) "GB">
+<!ELEMENT nprocesadores (#PCDATA)>
 <!ELEMENT velocidad (#PCDATA)>
 <!ATTLIST velocidad
-        medida CDATA #FIXED "GHz">
-<!ELEMENT ram (memoria,tipo)>
+    medida CDATA #FIXED "GHz">
+<!ELEMENT ram (memoria, tipo)>
 <!ELEMENT memoria (#PCDATA)>
-<!ATTLIST memoria
-          unidad_de_medida (Mb|Gb|Tb) "Gb" >
+<!ATTLIST memoria 
+    medida (MB|GB|TB) "GB">
 <!ELEMENT tipo (#PCDATA)>
-<!ELEMENT disco (#PCDATA)>
-<!ATTLIST disco
-          tipo (SSD|HDD) #REQUIRED
-          capacidad (Mb|Gb|Tb) #REQUIRED>
-<!ELEMENT pantalla (dimension,resolucion,resolucion_max?)>
+<!ELEMENT disco (tipo, capacidad)>
+<!ELEMENT capacidad (#PCDATA)>
+<!ATTLIST capacidad
+    medida (MB|GB|TB) "GB">
+<!ELEMENT pantalla (dimension, resolucion, rmaxima?)>
 <!ELEMENT dimension (#PCDATA)>
 <!ELEMENT resolucion (#PCDATA)>
-<!ELEMENT resolucion_max (#PCDATA)>
+<!ELEMENT rmaxima (#PCDATA)>
 <!ELEMENT grafica (#PCDATA)>
-<!ELEMENT fotos (#PCDATA)>
 
 

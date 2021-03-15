@@ -7,51 +7,53 @@ en él se guarda las características de los portátiles.
 -->
 <!DOCTYPE catalogo SYSTEM '04_11.dtd'>
 <catalogo xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xsi:noNamespaceSchemaLocation='04_11.xsd'>
-    <portatil>
-        <referencia>HP10219</referencia>
+         xsi:noNamespaceSchemaLocation='04_11.xsd'>
+    <portatil> 
+        <referencia>HP102219</referencia>
         <nombre>PORTATIL HP 15-DA0204NS</nombre>
         <fabricante nombre="HP"/>
         <procesador>
-            <nombreP>CORE I3-7020U</nombreP>
-            <cache tamanyo="Mb"></cache>
-            <n_Procesadores></n_Procesadores>
-            <velocidad medida="GHz">2,3GHZ</velocidad>
+            <nombre>Intel Core i3-7020U</nombre>
+            <cache tamanyo="Mb">3000</cache>
+            <numero>2</numero>
+            <velocidad medida="Ghz">5.3</velocidad>
         </procesador>
         <ram>
-            <memoria unidad_de_medida="Gb">8GB</memoria>
+            <memoria medida="Gb">32</memoria>
             <tipo>DDR3</tipo>
         </ram>
-        <disco capacidad="Gb" tipo="SSD">256Gb SSD</disco>
+        <disco tipo="SSD" medida="Gb">250</disco>
         <pantalla>
             <dimension>15.6 pulgadas</dimension>
             <resolucion>1266x768</resolucion>
-            <resolucion_max>1366x768</resolucion_max>
+            <maxima>1366x768</maxima>
         </pantalla>
-        <grafica>UHD Graphics 620</grafica>
-        <fotos>foto1.png</fotos>
+        <grafica>Intel UHD Graphics 620</grafica>       
+        <foto>foto1.png</foto>
+        <foto>foto2.png</foto>       
     </portatil>
-    <portatil>
-        <referencia></referencia>
-        <nombre>PORTATIL LENOVO IDEAPAD</nombre>
-        <fabricante nombre="LENOVO"/>
+    <portatil> 
+        <referencia>HP102219</referencia>
+        <nombre>PORTATIL HP 15-DA0204NS</nombre>
+        <fabricante nombre="HP"/>
         <procesador>
-            <nombreP>S145 CORE I3-8145U</nombreP>
-            <cache tamanyo="Gb"></cache>
-            <n_Procesadores></n_Procesadores>
-            <velocidad medida="GHz">2,1GHZ</velocidad>
+            <nombre>Intel Core i3-7020U</nombre>
+            <cache tamanyo="Gb">3</cache>
+            <numero>2</numero>
+            <velocidad medida="Ghz">5.3</velocidad>
         </procesador>
         <ram>
-            <memoria unidad_de_medida="Gb">8GB</memoria>
+            <memoria medida="Gb">32</memoria>
             <tipo>DDR3</tipo>
         </ram>
-         <disco capacidad="Gb" tipo="SSD">256Gb SSD</disco>
+        <disco tipo="SSD" medida="Gb">250</disco>
         <pantalla>
             <dimension>15.6 pulgadas</dimension>
             <resolucion>1266x768</resolucion>
+            <maxima>1366x768</maxima>
         </pantalla>
-        <grafica>UHD Graphics 620</grafica>
-        <fotos>foto2.png</fotos>
-        <fotos>foto3.png</fotos>
+        <grafica>Intel UHD Graphics 620</grafica>       
+        <foto>foto1.png</foto>
+        <foto>foto2.png</foto>       
     </portatil>
 </catalogo>
