@@ -23,15 +23,13 @@
                 </center>
                 <table border="2">
                     <tr>
-                        <td>Nombre</td>
-                        <td>Apellidos</td>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
                     </tr>
-                    <tr>
-                        <td>
-                            <xsl:apply-templates select="alumno"/>
-                        </td>
-                    </tr>
+                    <xsl:apply-templates select="alumno"/>
+                       
                 </table>
+                <footer>Aroa Granero Omanas DAW1</footer>
             </body>
         </html>
     </xsl:template>
