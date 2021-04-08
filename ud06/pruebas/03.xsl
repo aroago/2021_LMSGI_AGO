@@ -27,7 +27,7 @@
                         <th>Apellidos</th>
                     </tr>
                     <xsl:apply-templates select="alumno"/>
-                       
+                     
                 </table>
                 <footer>Aroa Granero Omanas DAW1</footer>
             </body>
