@@ -21,9 +21,7 @@
                     <h1>Información de las viviendas</h1>
                 </center>
                 <xsl:apply-templates select="vivienda"/>
-                <ol>
-                    <xsl:apply-templates select="vecinos"/>
-                </ol>
+                <p></p>
             </body>
         </html>
     </xsl:template>
@@ -32,10 +30,16 @@
            Piso:  <xsl:value-of select="piso"/>
            Puerta: <xsl:value-of select="puerta"/>
         </p>
+        <xsl:apply-templates select="vecinos"/>
     </xsl:template>
     <xsl:template match="vecinos">
-        <p>  
-          <li><xsl:value-of select="nombre"/></li>
-        </p>
+        <ol>
+            <xsl:apply-templates select="nombre"/>
+        </ol>
     </xsl:template>
+    <xsl:template match="nombre">
+        <li><xsl:value-of select="."/></li>
+    </xsl:template>
+    
+ 
 </xsl:stylesheet>
