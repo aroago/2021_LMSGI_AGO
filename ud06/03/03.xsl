@@ -18,36 +18,57 @@
         <html>
             <head>
                 <title>XSLT 03 Aroa Granero Omañas</title>
+                <style>
+                    table,tr,td,th{border: 1px solid grey;
+                    text-align:center;
+                    }
+                   
+                </style>
             </head>
             <body>
                 <h1>HORARIO DEL CURSO <xsl:value-of select="@curso"/></h1>
+                <h2>TABLA MODULOS</h2>
                 <table>
                     <tr>
                         <th>Codigo Modulo</th>
                         <th>Nombre del Modulo</th>
                     </tr>
-                    <xsl:apply-templates select="modulos/modulo"/>
+                    <xsl:apply-templates select="modulos/modulo">
+                        <xsl:sort select="@codM"/>
+                    </xsl:apply-templates>
                 </table>
+                <h2> TABLA PROFESORES</h2>
                 <table>
                     <tr>
                         <th>Codigo Profesor</th>
                         <th>Nombre Profesor</th>
                     </tr>
-                    <xsl:apply-templates select="profesores/profesor"/>
+                    <xsl:apply-templates select="profesores/profesor">
+                        <xsl:sort select="@codP"/>
+                    </xsl:apply-templates>
                 </table>
+                <h2>TABLA HORARIO</h2>
                 <xsl:for-each select="grupo">
                     <div>
                         <table>
                             <caption>Horario del curso <xsl:value-of select="@idgrupo"/>
-                                <br/>Tutor: <xsl:value-of select="../profesores/profesor[@codP=(current()/@codT)]/."/>
+                                <br/>Tutor: <xsl:value-of select="..//profesor[@codP=(current()/@codT)]/."/>
                             </caption>
                             <tr>
                                 <th>Hora</th>
                                 <th>Lunes</th>
-                                <th>Martes</th>
-                                <th>Miércoles</th>
-                                <th>Jueves</th>
-                                <th>Viernes</th>
+                                <th>
+                                    <xsl:value-of select="//hora[1]/dia_sem[2]/@dia"/>
+                                </th>
+                                <th>
+                                    <xsl:value-of select="//hora[1]/dia_sem[3]/@dia"/>
+                                </th>
+                                <th>
+                                    <xsl:value-of select="//hora[1]/dia_sem[4]/@dia"/>
+                                </th>
+                                <th>
+                                    <xsl:value-of select="//hora[1]/dia_sem[5]/@dia"/>
+                                </th>
                             </tr>
                             <xsl:apply-templates select="hora"/>
                         </table>
@@ -100,12 +121,17 @@
             </xsl:attribute>
             <abbr>
                 <xsl:attribute name="title">
-                    <xsl:value-of select="../../../modulos/modulo[@codM=current()]/."/>
+                    <xsl:value-of select="//modulos/modulo[@codM=current()]/text()"/>
                 </xsl:attribute>
-                <xsl:value-of select="."/>
+                <xsl:value-of select="current()"/>
             </abbr>
             <br/>
-            <xsl:value-of select="../../../imparte/asignatura[@codM=current()]/@codProfesor"/>
+            <abbr>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="//profesor/[]text()"/>
+                </xsl:attribute>
+                <xsl:value-of select="//asignatura[@codM=current()]/@codProfesor"/>
+            </abbr>
         </td>
     </xsl:template>
 </xsl:stylesheet>
