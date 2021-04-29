@@ -1,7 +1,13 @@
-<html>
+<!Doctype html><!--
+            
+             Autor .- Aroa Granero Omañas --><!--
+            
+             Fecha.- Lunes 20 de abril de 2020 --><!--
+            
+             Descripcion .- Listado de tickets --><html>
     <head>
-        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>02 XSLT Aroa Granero Omanas</title>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>02 XSLT Aroa Granero Oma&ntilde;as</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-with, initial-scale=1.0">
         <meta name="author" content="Amor Rodriguez">
@@ -9,8 +15,8 @@
         <meta name="description" content="Informacion de tickets">
         <meta name="keywords" content="tikets , total, xslt,xml">
         <meta name="robots" content="index, follow">
-        <meta name="css/estilo.css" rel="strylesheet" type="text/css">
-        <meta rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../../img/favicon.ico" type="image/png">
+        <link rel="stylesheet" href="02.css" type="text/css">
     </head>
     <body>
         <header>
@@ -19,34 +25,52 @@
         <div>
             <h2>Listado de Tikets</h2>
         </div>
-                7483
-        2012-01-20
-        22:00:00
-        
-            Agua
-            0.60
-        
-        
-            Refresco
-            1.00
-        	
-        1.60
-    
-        7484
-        2012-01-21
-        22:05:00
-        
-            Refresco
-            1.00
-        
-        
-            Refresco
-            1.00
-        	
-        2.00
-    
-        <div>
-                    Numero de Tickets: 2
-                    Total de Tickets: 3.6</div>
+        <div id="cabeza">  
+            Tikets: 7483</div>
+        <table>
+            <tr>
+                <th>Producto</th><th>Precio</th>
+            </tr>
+            <tr>
+                <td>Agua</td><td>0,60</td>
+            </tr>
+            <tr>
+                <td>Refresco</td><td>1,00</td>
+            </tr>
+            <tr>
+                <th>total</th><th>0,60</th>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td id="foot" colspan="4">FECHA DEL TICKET  20/01/2012</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div id="cabeza">  
+            Tikets: 7484</div>
+        <table>
+            <tr>
+                <th>Producto</th><th>Precio</th>
+            </tr>
+            <tr>
+                <td>Refresco</td><td>1,00</td>
+            </tr>
+            <tr>
+                <td>Refresco</td><td>1,00</td>
+            </tr>
+            <tr>
+                <th>total</th><th>0,60</th>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td id="foot" colspan="4">FECHA DEL TICKET  21/01/2012</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div id="pie">
+                                Numero de Tickets: 2
+            <br>
+                                Total de Tickets: 3.6
+        </div>
     </body>
 </html>

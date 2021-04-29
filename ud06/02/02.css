@@ -1,0 +1,61 @@
+
+/* 
+    Created on : 29 abr. 2021, 8:55:44
+    Author     : daw1
+*/
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+        font-family: arial;
+	}
+
+ul, ol{
+	list-style:none;
+}
+h1{ color:#109cc1;
+background-color: #d1d3d4;
+padding-left: 25px; }
+h2{
+  color:#d1d3d4;
+background-color: #109cc1;
+ padding-left: 25px;  
+}
+
+#pie{
+    color:#d1d3d4;
+background-color: #109cc1;  
+text-align: right;
+padding-right: 1em; 
+}
+
+#cabeza{
+    border:2px solid #b0dcf7;
+    color:#109cc1;
+    padding-left: 1em; 
+    
+}
+
+table{
+    margin:0 auto;
+   width: 80%;
+   margin-bottom: 5%;
+}
+td,th{
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+tfoot{
+    font-size: 10px;
+    font-style: italic;
+    color:#109cc1;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#foot{
+    border-bottom-style: none;
+    
+}
+div,h1{
+    margin-bottom: 3%;
+}
