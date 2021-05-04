@@ -21,6 +21,7 @@
 <!ELEMENT provincia (#PCDATA)>
 <!ELEMENT cif (#PCDATA)>
 
+<!ELEMENT telefono EMPTY>
 <!ATTLIST telefono
     num_tel CDATA #FIXED "917776688"  >
 

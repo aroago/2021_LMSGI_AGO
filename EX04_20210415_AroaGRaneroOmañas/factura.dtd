@@ -7,7 +7,7 @@
 
 -->
 
-<!ELEMENT factura (datos_emisor,datos_receptor,datos_factura)*>
+<!ELEMENT factura (datos_emisor,datos_receptor,datos_factura)>
 <!ATTLIST factura
     n_factura CDATA #REQUIRED
     xsi:noNamespaceSchemaLocation CDATA #IMPLIED
