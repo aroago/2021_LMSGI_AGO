@@ -18,12 +18,14 @@
         <html>
             <head>
                 <title>Aroa Granero Omanas 05.xsl</title>
-                 <link rel="stylesheet" href="05.css" type="text/css"/>
+                <link rel="stylesheet" href="05.css" type="text/css"/>
             </head>
             <body>
                 <table>
                     <tr>
-                        <h2>FANCTURA NUMERO <xsl:value-of select="n_factura"/></h2>
+                        <td colspan="3">
+                            <h2>FANCTURA NUMERO <xsl:value-of select="n_factura"/></h2>
+                        </td>
                     </tr>
                     <tr>
                         <th colspan="3">DATOS EMISOR</th>
@@ -44,7 +46,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3">DATOS DE CONTACTO</td>
+                        <th colspan="3">DATOS DE CONTACTO</th>
                     </tr>
                     <tr>
                         <td>TELEFONO: <xsl:value-of select="datos_emisor/num_tel"/></td>
@@ -84,24 +86,26 @@
                         <th colspan="3">DETALLE FACTURA</th>
                     </tr>
                     <tr>
-                    <table>
-                        <tr>
-                            <th>Ref</th>
-                            <th>Descripción</th>
-                            <th>Cantidad</th>
-                            <th>Precio</th>
-                            <th>Importe</th>
-                        </tr>
-                        <xsl:apply-templates select="//linea "/>
-                    </table>
+                        <td colspan="3">
+                            <table>
+                                <tr>
+                                    <th>Ref</th>
+                                    <th>Descripción</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Importe</th>
+                                </tr>
+                                <xsl:apply-templates select="//linea "/>
+                            </table>
+                        </td>
                     </tr>
                     <tr>
-                        <th>IMPORTES FACTURA</th>
+                        <th colspan="3">IMPORTES FACTURA</th>
                     </tr>
                     <tr>
-                        <th>Base:<xsl:value-of select="datos_factura/base"/></th>
-                        <th>Cuota IVA:<xsl:value-of select="datos_factura/cuota_iva"/></th>
-                        <th>Total Factura:<xsl:value-of select="datos_factura/total"/></th>
+                        <th class="fin">Base:<xsl:value-of select="datos_factura/base"/></th>
+                        <th class="fin">Cuota IVA:<xsl:value-of select="datos_factura/cuota_iva"/></th>
+                        <th class="fin">Total Factura:<xsl:value-of select="datos_factura/total"/></th>
                     </tr>
                 </table>
             </body>

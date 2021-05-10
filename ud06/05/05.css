@@ -1,9 +1,41 @@
+
+  
 *{
     border: 0;
     margin: 0;
     padding: 0;
+    font-family: arial;
 }
-table,td,th,tr{
+
+table{
+    width: 80%;
+    margin: 1% auto;
+}
+table, tr, th, td{
     border: 1px solid black;
-    background-color: greenyellow;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 0.30% 1%;
+}
+
+h2{
+    text-align: center;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+th{
+    color: #AD1C1C;
+    text-align: left;
+    text-transform: uppercase;
+}
+.fin{
+    text-align: right;
+    color: black;
+}
+table table{
+    width: 100%;
+    margin: 0;
 }
