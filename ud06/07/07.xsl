@@ -10,7 +10,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
-    <xsl:param name="corregido" select="'si'"/>
+    <xsl:param name="corregido" select="'no'"/>
 
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
@@ -34,8 +34,10 @@
                 <form method="get" action="text.php">
                     <xsl:apply-templates select="//pregunta"/>
                     <xsl:if test="$corregido!='si'">
-                        <div id="botones">
+                        <div class="botones">
                             <input type="submit" value="Enviar"/>
+                        </div>
+                        <div class="botones">
                             <input type="reset" value="Resetear"/>
                         </div>
                     </xsl:if>
@@ -45,7 +47,9 @@
     </xsl:template>
     <xsl:template match="pregunta">
         <fieldset>
+            <div class="pregunta">
             <xsl:value-of select="concat(@id,'.-',enunciado)"/>
+            </div>
             <xsl:apply-templates select="respuestas/respuesta"/>
         </fieldset>
     </xsl:template>
