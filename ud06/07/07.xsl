@@ -34,12 +34,11 @@
                 <form method="get" action="text.php">
                     <xsl:apply-templates select="//pregunta"/>
                     <xsl:if test="$corregido!='si'">
-                        <div class="botones">
-                            <input type="submit" value="Enviar"/>
+                        <div class="divBotton">
+                            <input class="botones" type="submit" value="Enviar"/>
+                            <input class="botones" type="reset" value="Resetear"/>
                         </div>
-                        <div class="botones">
-                            <input type="reset" value="Resetear"/>
-                        </div>
+                     
                     </xsl:if>
                 </form> 
             </body>

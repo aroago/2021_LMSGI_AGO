@@ -4,7 +4,10 @@
     padding: 0;
     font-family: arial;
 }
-
+h1,h2,h3{
+    margin-bottom: 2%;
+    
+}
 .pregunta{
     
    font-weight: bold; 
@@ -12,10 +15,13 @@
 }
 .respuesta{
     border: 1px dotted black;
-    margin: 0% 5% 0% 5%;
+    margin: 0% 5% 1% 5%;
     padding: 0.50%;
 }
-
+.respuesta:hover {
+    background-color: #1CADA4; 
+    color: white;
+}
 fieldset{
     border: 3px solid grey;
     margin: 0% 5% 0% 5%;
@@ -25,7 +31,6 @@ fieldset{
 .botones{
     transition-duration: 0.4s;
     text-align: center;
-     display: inline-block;
     padding: 10px;
     font-weight: 600;
     font-size: 20px;
@@ -34,7 +39,9 @@ fieldset{
     border: 2px solid #1E736E;
  
 }
-
+.divBotton{
+    text-align: center;
+}
 .botones:hover {
     background-color: #4CAF50; 
     color: white;
