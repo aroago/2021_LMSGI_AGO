@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!--
+    Document   : prediccion.xsd
+    Created on : 18 de mayo de 2021
+    Author     : aroaGO
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:simpleType name="tipoTemperatura">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="-100"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="prediccion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="municipio">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" maxOccurs="1"/>
+                            <xs:element name="provincia" type="xs:string" maxOccurs="1"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" use="required"/>
+                    </xs:complexType>
+                </xs:element><!--fin elemento municipio-->
+                <xs:element name="dia"  minOccurs="7" maxOccurs="7">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="prob_precipitacion" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="100"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="estado_cielo">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension  base="xs:integer">
+                                            <xs:attribute name="descripcion" use="required" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="viento">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="direccion" type="xs:string"/>
+                                        <xs:element name="velocidad">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="400"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="temperatura">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="maxima" type="tipoTemperatura"/>
+                                        <xs:element name="minima" type="tipoTemperatura"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="fecha" type="xs:date"/>
+                    </xs:complexType>
+                </xs:element><!--fin elemento dia-->
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element><!--fin elemento prediccion-->
+</xs:schema>

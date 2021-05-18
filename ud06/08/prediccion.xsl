@@ -3,22 +3,30 @@
 <!--
     Document   : prediccion.xsl.xsl
     Created on : 13 de mayo de 2021, 9:06
-    Author     : daw1
+    Author     : aroaGO
     Description:
         Purpose of transformation follows.
 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
-    <!-- <xsl:import href="../libweb.xsl"/>-->
+    
+     <xsl:include href="../lib/web.xsl"/>
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/">
+        <xsl:call-template name="docTipo"/>
         <html>
             <head>
-                <!-- <xsl:call-template name="metaweb"/>-->
-                <title>Aroa GRanero Omañas</title>
+                <xsl:call-template name="web">
+                    <xsl:with-param name="titulo" select="'Aroa granero Omañas'"/>
+                    <xsl:with-param name="descripcion" select="'el tiempo en una semana'"/>
+                </xsl:call-template>
+                
+               <!-- <title>Aroa GRanero Omañas</title>
+                <link rel="stylesheet" href="08.css" type="text/css"/>-->
+                
             </head>
             <body>
                 <h1>Predicción por municipios</h1>
@@ -48,7 +56,7 @@
                                     <xsl:value-of select="concat(temperatura/maxima)"/>
                                 </span>
                                 /
-                                <span class="mix">
+                                <span class="min">
                                     <xsl:value-of select="concat(temperatura/minima)"/>
                                 </span>
                             </td>
