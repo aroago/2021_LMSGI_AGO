@@ -18,7 +18,9 @@
         <xsl:value-of select="concat(name(),':')"/>
         <xsl:for-each select="//ethernets">
               <xsl:value-of select="concat(name(),':')"/>
-            <xsl:value-of select="concat(name,':')"/>
+              <xsl:value-of select="concat(name,':')"/>
+              
+              
         </xsl:for-each>
     </xsl:template>
 

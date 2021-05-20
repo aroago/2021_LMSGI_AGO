@@ -17,6 +17,7 @@
  <xsl:template name="web">
      <xsl:param name="titulo"/>
      <xsl:param name="descripcion"/>
+      <xsl:param name="keywords"/>
         <meta name="author" content="Aroa Granero Omañas"/>  
         <meta name="application-name" content="AppWeb de LMSGI"/>
         <meta name="description">
@@ -24,7 +25,11 @@
                 <xsl:value-of select="$descripcion"/>
             </xsl:attribute>
         </meta>
-        <meta name="keywords" content="tikets , total, xslt,xml"/>  
+         <meta name="keywords">
+            <xsl:attribute name="content">
+                <xsl:value-of select="$keywords"/>
+            </xsl:attribute>
+        </meta>
         <meta name="robots" content="index, follow"/>
         <link  rel="icon"  href="../../img/favicon.ico" type="image/png" />
         <link rel="stylesheet" href="css" type="text/css" />
@@ -32,5 +37,13 @@
     </xsl:template>
      <xsl:template name="docTipo">
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE htm&gt;</xsl:text>
+    </xsl:template>
+     <!-- Copiar los comentario -->
+    <xsl:template match="comment()"> 
+        <xsl:text xml:space="preserve">  
+        <xsl:comment>
+                <xsl:value-of select="."/>
+        </xsl:comment>
+        </xsl:text>
     </xsl:template>
 </xsl:stylesheet>
