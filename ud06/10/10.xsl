@@ -17,11 +17,13 @@
     <xsl:template match="/network">
         <xsl:value-of select="concat(name(),':')"/>
         <xsl:for-each select="//ethernets">
-              <xsl:value-of select="concat(name(),':')"/>
-              <xsl:value-of select="concat(name,':')"/>
-              
-              
+            <xsl:value-of select="concat(name(),':')"/>
+            <xsl:value-of select="name"/>
+            <xsl:value-of select="addresses"/>
+            <xsl:value-of select="gateway4"/>
+            <xsl:for-each select="//nameservers">
+                <xsl:value-of select="addresses"/>
+            </xsl:for-each>
         </xsl:for-each>
     </xsl:template>
-
 </xsl:stylesheet>
