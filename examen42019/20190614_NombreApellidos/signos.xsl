@@ -24,7 +24,7 @@ Mostrar horoscopo / los signos del zodiaco
                     <xsl:for-each select="horoscopo/signo">
                         <div class="contenido">
                             <article>
-                                <a title="horoscopo" href="./signosHoroscopo.html">
+                                <a title="horoscopo" href="./horoscopo/horoscopo.html">
                                     <abbr>
                                         <xsl:attribute name="title">
                                             <xsl:value-of select="concat('Consultar Horoscopo de',nombre/text())"/>
