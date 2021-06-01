@@ -13,7 +13,11 @@ Mostrar horoscopo / los signos del zodiaco
     <xsl:template match="/">
         <html>
             <head>
-                
+                <xsl:call-template name="web">
+                    <xsl:with-param name="titulo" select="concat('Examen 2018-2019-Aroa Granero Omañas')"/>
+                    <xsl:with-param name="descripcion" select="'Horoscopo'"/>
+                    <xsl:with-param name="keywords" select="'xml,xslt,horoscopo'"/>
+                </xsl:call-template>
             </head>
             <body>
                 <div class="imagenes">
@@ -28,7 +32,7 @@ Mostrar horoscopo / los signos del zodiaco
                         </xsl:attribute>
                     </xsl:element>
                 </div>
-                <h1>Horóscopo Del Dia</h1>
+                <h1>Horóscopo <xsl:value-of select="document('signos.xml'//signo[@id=current()//sing/@id]/nombre)"/></h1>
                 <div class="prediccion">
                     <h2>Predicción para hoy <xsl:value-of select="//date"/></h2>
                     <p>
