@@ -18,6 +18,25 @@ Mostrar horoscopo / los signos del zodiaco
                     <xsl:with-param name="descripcion" select="'Horoscopo'"/>
                     <xsl:with-param name="keywords" select="'xml,xslt,horoscopo'"/>
                 </xsl:call-template>
+                 <style>
+                    .imagenes{
+                        display: inline-block;
+                    }
+                    .prediccion{
+                        margin: 2% 10%;
+                    }
+                    p{
+                        font-weight: normal;
+                        font-style: italic;
+                        text-align: justify;
+                        margin: 0;
+                        padding: 0.5%;
+                        border: 5px solid gainsboro;
+                    }
+                    h2{
+                        margin-bottom: 1%;
+                    }
+                </style>
             </head>
             <body>
                 <div class="imagenes">
@@ -25,14 +44,20 @@ Mostrar horoscopo / los signos del zodiaco
                         <xsl:attribute name="src">
                             <xsl:value-of select="concat('../images/bg-', //@id,'.jpg')"/>
                         </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="'horoscopo'"/>
+                        </xsl:attribute>
                     </xsl:element>
                     <xsl:element name="img">
                         <xsl:attribute name="src">
                             <xsl:value-of select="concat('../images/', //@id,'.svg')"/>
                         </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="'Horoscopo Fondo'"/>
+                        </xsl:attribute>
                     </xsl:element>
                 </div>
-                <h1>Horóscopo <xsl:value-of select="document('signos.xml'//signo[@id=current()//sing/@id]/nombre)"/></h1>
+                <h1>Horóscopo <xsl:value-of select="(document('../signos.xml')//signo[@id=current()//@id]/nombre"/></h1>
                 <div class="prediccion">
                     <h2>Predicción para hoy <xsl:value-of select="//date"/></h2>
                     <p>
