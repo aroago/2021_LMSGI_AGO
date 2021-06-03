@@ -31,7 +31,7 @@
             </xsl:attribute>
         </meta>
         <meta name="robots" content="index, follow"/>
-        <link  rel="icon"  href="../../img/favicon.ico" type="image/png" />
+        <link  rel="icon"  href="./favicon.jpg" type="image/jpg" />
         <link rel="stylesheet" href="./css/estilos.css" type="text/css" />
         <title><xsl:value-of select="$titulo"/></title>
     </xsl:template>

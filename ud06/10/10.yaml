@@ -1,3 +1,4 @@
-network:ethernets:emp0s3 192.168.2.119/24
+network:
+        ethernets:emp0s3addresses: 192.168.2.119/24gateway4:
             192.168.2.1
-        8.8.8.8
+        nameservers:8.8.8.8

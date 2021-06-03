@@ -1,0 +1,52 @@
+<?xml version="4.0" encoding="UTF-8"?><html>
+    <head>
+        <meta name="author" content="Aroa Granero Omañas"/>
+        <meta name="application-name" content="AppWeb de LMSGI"/>
+        <meta name="description" content="Horoscopo"/>
+        <meta name="keywords" content="xml,xslt,horoscopo"/>
+        <meta name="robots" content="index, follow"/>
+        <link rel="icon" href="../../img/favicon.ico" type="image/png"/>
+        <link rel="stylesheet" href="./css/estilos.css" type="text/css"/>
+        <title>Examen 2018-2019-Aroa Granero Omañas</title>
+        <style>
+                    .imagenes{
+                        text-align: center;
+                        
+                    }
+                     img{
+                     border: 3px solid #edede1;
+                     }
+                    .prediccion{
+                        margin: 2% 10%;
+                    }
+                    p{
+                        font-weight: normal;
+                        font-style: italic;
+                        text-align: justify;
+                        margin: 0;
+                        padding: 0.5%;
+                        border: 3px solid #edede1;
+                    }
+                    h2{
+                        margin-bottom: 1%;
+                    }
+                    h1{
+                     text-align: center;
+                     } 
+                     
+                    
+                </style>
+    </head>
+    <body>
+        <div class="imagenes">
+            <img src="../images/6.svg" alt="horoscopo" style="&#10;                           background-image:url('../images/bg-6.jpg')&#10;                        "/>
+        </div>
+        <h1>HORÓSCOPO VIRGO</h1>
+        <div class="prediccion">
+            <h2>Predicción para hoy 14/06/2019</h2>
+            <p>
+Tal vez hoy sea un día de tensión en los asuntos familiares o con tus seres queridos, Virgo; quizá pienses que debes trabajar más que los demás y esto te cause demasiadas presiones... Todo se conseguirá actuando de una forma responsable, con perseverancia y concentrándote en el trabajo, aunque es posible que sientas cierto descontento con el entorno que te rodea. ¡No discutas!
+		</p>
+        </div>
+    </body>
+</html>
