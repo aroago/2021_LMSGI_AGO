@@ -1,0 +1,7 @@
+ .COOKING{color:green;}
+ .CHILDREN{color:blue; }
+ .WEB{color:red;}
+ table, td,th,tr{
+   border: double 1px green;
+   
+ }
