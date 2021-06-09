@@ -8,14 +8,35 @@ and open the template in the editor.
 
 <network>
     <ethernets>
-        <name>emp0s3</name>
-        <addresses> 192.168.2.119/24</addresses>
+        <name >
+            enp0s3
+        </name>
+        <addresses>
+            192.168.2.119/24
+        </addresses>
         <gateway4>
             192.168.2.1
         </gateway4>
         <nameservers>
-            <addresses>8.8.8.8</addresses>
-             <addresses>8.8.4.4</addresses>
+            <addresses>
+                8.8.8.8
+            </addresses>
+        </nameservers>
+    </ethernets>
+    <ethernets>
+        <name >
+            enp0s5
+        </name>
+        <addresses>
+            192.168.3.133/24
+        </addresses>
+        <gateway4>
+            192.168.3.1
+        </gateway4>
+        <nameservers>
+            <addresses>
+                1.1.1.1
+            </addresses> 
         </nameservers>
     </ethernets>
 </network>

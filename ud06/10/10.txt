@@ -1,0 +1,18 @@
+network:
+        ethernets:
+            enp0s3
+        addresses:
+            192.168.2.119/24
+        gateway4:
+            192.168.2.1
+        nameservers:
+                8.8.8.8
+            ethernets:
+            enp0s5
+        addresses:
+            192.168.3.133/24
+        gateway4:
+            192.168.3.1
+        nameservers:
+                1.1.1.1
+            

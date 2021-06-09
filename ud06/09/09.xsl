@@ -18,7 +18,7 @@
         <xsl:call-template name="docTipo"/>
         <html>
             <head>
-                <title>09.xsl</title>
+                
                 <xsl:call-template name="web">
                     <xsl:with-param name="titulo" select="concat('09 XSLT ',universidad/nombre)"/>
                     <xsl:with-param name="descripcion" select="'Informacion Universidad'"/>
