@@ -1,6 +1,5 @@
 <libros>{
-
-  for $book in //book
+ for $book in //book
 return
  <libro>
 {$book/title}

@@ -32,7 +32,7 @@
         </meta>
         <meta name="robots" content="index, follow"/>
         <link  rel="icon"  href="../../img/favicon.ico" type="image/png" />
-        <link rel="stylesheet" href="./css.css" type="text/css" />
+        <link rel="stylesheet" href="./css/estilo.css" type="text/css" />
         <title><xsl:value-of select="$titulo"/></title>
     </xsl:template>
      <xsl:template name="docTipo">

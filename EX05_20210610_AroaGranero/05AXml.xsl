@@ -14,8 +14,18 @@
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
-    <xsl:template match="/">
-        
+    <xsl:template match="/mysqldump">
+        <BDDepartamentos>
+            
+            <xsl:apply-templates select="//table_data/row/field"/>
+            
+        </BDDepartamentos>
+    </xsl:template>
+    <xsl:template match="//table_data/row/field">
+        <row>
+            <xsl:value-of select="current()"/>
+            <xsl:apply-templates select="@name"/>
+        </row>
     </xsl:template>
 
 </xsl:stylesheet>
