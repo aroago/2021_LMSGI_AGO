@@ -23,8 +23,9 @@
     </xsl:template>
     <xsl:template match="//table_data/row/field">
         <row>
-            <xsl:value-of select="current()"/>
-            <xsl:apply-templates select="@name"/>
+            <xsl:element name="{@name}">
+                <xsl:value-of select="current()"/>
+            </xsl:element>
         </row>
     </xsl:template>
 
